@@ -1,2 +1,39 @@
-Hi hehehe!<br>
-Hohoho
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <div id="chart_div"></div>
+  <script>    
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'newyear');
+      data.addColumn('number', 'ครั้ง');
+
+      data.addRows([
+        ['2551',30866],
+['2552',27283],
+['2553',27936],
+['2554',25998],
+['2555',26131],
+['2556',26649],
+['2557',25970],
+['2558',24116]
+      ]);
+
+      var options = {
+      title: 'Company Performance',
+      legend: { position: 'none' },
+        hAxis: {
+          title: 'ปี พ.ศ.'
+        },
+        vAxis: {
+          title: 'จำนวนครั้งที่เกิดอุบัติเหตุ'
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+</script>
