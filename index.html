@@ -1,4 +1,4 @@
-
+<center>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <div id="chart_div"></div>
   <script>    
@@ -412,7 +412,9 @@ google.charts.load('current', {
           title: 'แสดงความสัมพันธ์ระหว่างจำนวนผู้บาดเจ็บ กับผู้ที่ดื่มสุรา',
           hAxis: {title: 'จำนวนผู้บาดเจ็บ', minValue: 0, maxValue: 15},
           vAxis: {title: 'จำนวนผู้ที่ดื่มสุรา', minValue: 0, maxValue: 15},
-          legend: 'none'
+          legend: 'none',
+          width: '50%',
+        height: 500,
         };
 
         var chart = new google.visualization.ScatterChart(document.getElementById('chart_div2'));
@@ -522,6 +524,8 @@ google.charts.load('current', {
           vAxis: {title: 'จำนวนผู้ที่ไม่สวมหมวกกันน็อค', minValue: 0, maxValue: 15},
           legend: 'none',
            colors: ['red']
+          width: '50%',
+        height: 500,
         };
 
         var chart = new google.visualization.ScatterChart(document.getElementById('chart_div3'));
@@ -532,3 +536,4 @@ google.charts.load('current', {
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
        <div id="chart_div3" style="width: 900px; height: 500px;"></div>
+</center>
