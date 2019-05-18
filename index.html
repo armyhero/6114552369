@@ -204,34 +204,32 @@ google.charts.load('current', {
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-            google.charts.load('current', {'packages':['corechart']});
+          google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
-
       function drawChart() {
-
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['จักรยานยนต์',     19249],
-          ['ปิคอัพ',      1327],
-          ['รถจักรยาน',  1225],
-          ['รถเก๋ง/แท็กซี่', 804],
-          ['สามล้อเครื่อง',    229],
-          ['อื่นๆ', 176],
-          ['ไม่ทราบ', 118],
-          ['รถตู้', 101],
-          ['รถโดยสารใหญ่', 79],
-          ['รถบรรทุก', 72],
-          ['รถโดยสาร 4 ล้อ', 54],
-          ['สามล้อถีบ', 20]
+          ['จักรยานยนต์',5624],
+['ปิคอัพ',462],
+['รถจักรยาน',420],
+['รถเก๋ง/แท็กซี่',189],
+['อื่นๆ',105],
+['สามล้อเครื่อง',66],
+['รถโดยสารใหญ่',41],
+['รถบรรทุก',27],
+['รถตู้',26],
+['รถโดยสาร 4 ล้อ',12],
+['สามล้อถีบ',1]
         ]);
-
         var options = {
-          title: 'My Daily Activities',
-          sliceVisibilityThreshold: 0
+          title: 'สัดส่วนการเกิดอุบัติเหตุช่วงเทศกาลปีใหม่ ในพื้นที่ภาคตะวันออกเฉียงเหนือ พ.ศ.2558 โดยแยกตามประเภทของยานพาหนะ',
+          sliceVisibilityThreshold: 0,
+           width: '100%',
+        height: 500,
         };
-
+        
+        
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
         chart.draw(data, options);
       }
     </script>
