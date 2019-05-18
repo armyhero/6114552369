@@ -39,3 +39,41 @@ function drawBasic() {
       chart.draw(data, options);
     }
 </script>
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['จักรยานยนต์',     19249],
+          ['ปิคอัพ',      1327],
+          ['รถจักรยาน',  1225],
+          ['รถเก๋ง/แท็กซี่', 804],
+          ['สามล้อเครื่อง',    229],
+          ['อื่นๆ', 176],
+          ['ไม่ทราบ', 118],
+          ['รถตู้', 101],
+          ['รถโดยสารใหญ่', 79],
+          ['รถบรรทุก', 72],
+          ['รถโดยสาร 4 ล้อ', 54],
+          ['สามล้อถีบ', 20]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </body>
