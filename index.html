@@ -241,7 +241,38 @@ google.charts.load('current', {
 
 
 
+<script>
+  google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['จักรยานยนต์',291],
+['ปิคอัพ',25],
+['สามล้อเครื่อง',15],
+['รถเก๋ง/แท็กซี่',14],
+['อื่นๆ',7],
+['รถจักรยาน',4],
+['รถตู้',2],
+['สามล้อถีบ',2],
+['รถบรรทุก',1]
+        ]);
+        var options = {
+          title: 'สัดส่วนการเกิดอุบัติเหตุช่วงเทศกาลปีใหม่ ในจังหวัดกาฬสินธุ์ พ.ศ.2558 โดยแยกตามประเภทของยานพาหนะ',
+          sliceVisibilityThreshold: 0,
+           width: '100%',
+        height: 500,
+        };
+        
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Kalasin'));
+        chart.draw(data, options);
+      }
+</script>
 
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+       <div id="Kalasin" style="width: 100%; height: 800px;"></div>
 
 
 
