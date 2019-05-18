@@ -434,7 +434,7 @@ google.charts.load('current', {
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
-        var data = google.visualization.arrayToDataTable([
+        var data2 = google.visualization.arrayToDataTable([
           ['ผู้บาดเจ็บ','ผู้ที่ไม่สวมหมวกกันน็อค'],
           [168,32],
 [19,1],
@@ -516,7 +516,7 @@ google.charts.load('current', {
         
         ]);
 
-        var options = {
+        var options2 = {
           title: 'แสดงความสัมพันธ์ระหว่างจำนวนผู้บาดเจ็บ กับผู้ที่ไม่สวมหมวกกันน็อค',
           hAxis: {title: 'จำนวนผู้บาดเจ็บ', minValue: 0, maxValue: 15},
           vAxis: {title: 'จำนวนผู้ที่ไม่สวมหมวกกันน็อค', minValue: 0, maxValue: 15},
@@ -524,9 +524,9 @@ google.charts.load('current', {
            colors: ['red']
         };
 
-        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div2'));
+        var chart2 = new google.visualization.ScatterChart(document.getElementById('chart_div2'));
 
-        chart.draw(data, options);
+        chart.draw(data2, options2);
       }
 </script>
 
