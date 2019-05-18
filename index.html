@@ -1,6 +1,6 @@
 <center>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <h2 style="color: black;background-color: #e0edfe;">จำนวนผู้บาดเจ็บในช่วงเทศกาลปีใหม่ พ.ศ.2551 - 2558</h2>
+  <h2 style="color: black;background-color: #e0edfe;">การเกิดอุบัติเหตุในช่วงเทศกาลปีใหม่ พ.ศ.2551 - 2558</h2>
   <div id="chart_div"></div><br><br><br><br><br>
   <script>    
 google.charts.load('current', {packages: ['corechart', 'line']});
@@ -47,8 +47,8 @@ function drawBasic() {
 
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-      <h1 style="color: black;background-color: #e0edfe;">จำนวนผู้บาดเจ็บในช่วงเทศกาลปีใหม่ พ.ศ.2558 แบ่งตามจังหวัด</h1>
-       <div id="regions_div" style="width: 100%; height: 600px;"></div><br><br><br><br><br>
+      <h2 style="color: black;background-color: #e0edfe;">การเกิดอุบัติเหตุในช่วงเทศกาลปีใหม่ พ.ศ.2558 แบ่งตามจังหวัด</h2>
+       <div id="regions_div" style="width: 100%; height: 800px;"></div><br><br><br><br><br>
 <script>
 google.charts.load('current', {
         'packages':['geochart'],
@@ -158,48 +158,7 @@ google.charts.load('current', {
 
 
 
- <script>
-    google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawVisualization);
-      function drawVisualization() {
-        // Some raw data (not necessarily accurate)
-        var data = google.visualization.arrayToDataTable([
-          ['Provice', 'การเกิดอุบัติเหตุ', 'Ref'],
-          ['Kalasin',90,0],
-['Ubon Ratchathani',74,0],
-['Sakon Nakhon',20,0],
-['Chaiyaphum',2,0],
-['Amnat Charoen',-3,0],
-['Nong Bua Lam Phu',-9,0],
-['Roi Et',-11,0],
-['Loei',-18,0],
-['Nong Khai',-18,0],
-['Udon Thani',-22,0],
-['Maha Sarakham',-26,0],
-['Nakhon Pathom',-26,0],
-['Mukdahan',-35,0],
-['Yasothon',-47,0],
-['Si Sa Ket',-66,0],
-['Khon Kaen',-73,0],
-['Nakhon Ratchasima',-128,0],
-['Surin',-139,0],
-['Buri Ram',-157,0]
-        ]);
-        var options = {
-          //title : 'การเกิดอุบัติเหตุช่วงเทศกาลปีใหม่ ในพื้นที่ภาคตะวันออกเฉียงเหนือ พ.ศ.2558 เทียบกับ พ.ศ.2557',
-          vAxis: {title: 'จำนวนการเกิดอุบัติเหตุ'},
-          hAxis: {title: 'รายชื่อจังหวัดในพื้นที่ภาคตะวันออกเฉียงเหนือ'},
-          seriesType: 'bars',
-          series: {1: {type: 'line'}}
-        };
-        var chart = new google.visualization.ComboChart(document.getElementById('devichart_div'));
-        chart.draw(data, options);
-      }
-     </script>
-
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <h2 style="color: black;background-color: #e0edfe;">การเกิดอุบัติเหตุช่วงเทศกาลปีใหม่ ในพื้นที่ภาคตะวันออกเฉียงเหนือ พ.ศ.2558 เทียบกับ พ.ศ.2557</h2>
-       <div id="devichart_div" style="width: 100%; height: 600px;"></div><br><br><br><br><br>
+ 
 
 
 
@@ -293,6 +252,58 @@ google.charts.load('current', {
 </script> 
 
 
+  
+  
+  
+  
+  
+  <script>
+    google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          ['Provice', 'การเกิดอุบัติเหตุ', 'Ref'],
+          ['Kalasin',90,0],
+['Ubon Ratchathani',74,0],
+['Sakon Nakhon',20,0],
+['Chaiyaphum',2,0],
+['Amnat Charoen',-3,0],
+['Nong Bua Lam Phu',-9,0],
+['Roi Et',-11,0],
+['Loei',-18,0],
+['Nong Khai',-18,0],
+['Udon Thani',-22,0],
+['Maha Sarakham',-26,0],
+['Nakhon Pathom',-26,0],
+['Mukdahan',-35,0],
+['Yasothon',-47,0],
+['Si Sa Ket',-66,0],
+['Khon Kaen',-73,0],
+['Nakhon Ratchasima',-128,0],
+['Surin',-139,0],
+['Buri Ram',-157,0]
+        ]);
+        var options = {
+          //title : 'การเกิดอุบัติเหตุช่วงเทศกาลปีใหม่ ในพื้นที่ภาคตะวันออกเฉียงเหนือ พ.ศ.2558 เทียบกับ พ.ศ.2557',
+          vAxis: {title: 'จำนวนการเกิดอุบัติเหตุ'},
+          hAxis: {title: 'รายชื่อจังหวัดในพื้นที่ภาคตะวันออกเฉียงเหนือ'},
+          seriesType: 'bars',
+          series: {1: {type: 'line'}}
+        };
+        var chart = new google.visualization.ComboChart(document.getElementById('devichart_div'));
+        chart.draw(data, options);
+      }
+     </script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <h2 style="color: black;background-color: #e0edfe;">การเกิดอุบัติเหตุช่วงเทศกาลปีใหม่ ในพื้นที่ภาคตะวันออกเฉียงเหนือ พ.ศ.2558 เทียบกับ พ.ศ.2557</h2>
+       <div id="devichart_div" style="width: 100%; height: 600px;"></div><br><br><br><br><br>
+  
+  
+  
+  
+  
 
 
 <script>
